@@ -12,7 +12,11 @@ def detect_problems(filename):
     if data['score2'].min() < 1 and data['score'].min() > 0:
         print 'Suspicious data!'
     elif data.loc[data['chrom'] == 'chrM']['score'].mean() > 200:
+<<<<<<< HEAD
         print 'High scores on mitochondria!'
+=======
+        print 'High scores on mitochondrial genome!'
+>>>>>>> upstream/master
     else:
         print 'Seems OK!'
         
